@@ -206,7 +206,7 @@ function fill_status(status_code){
                                         <tr> <th><#menu5_13_log#></th>
                                             <td>
                                                 <div class="main_itoggle">
-                                                    <div id="scutclient_log_on_of">
+                                                    <div id="scutclient_log_enable_on_of">
                                                         <input type="checkbox" id="scutclient_log_enable_fake" <% nvram_match_x("", "scutclient_log_enable", "1", "value=1 checked"); %><% nvram_match_x("", "scutclient_log_enable", "0", "value=0"); %>>
                                                     </div>
                                                 </div>
