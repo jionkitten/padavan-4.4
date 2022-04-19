@@ -24,7 +24,7 @@ endif
 all: ndppd
 romfs:
 	$(ROMFSINST) ndppd /usr/bin/ndppd
-	$(ROMFSINST) ndppd.conf-dist /etc/ndppd.conf
+	$(ROMFSINST) ndppd.conf-dist /etc/storage/ndppd.conf
 
 install: all
 	mkdir -p ${SBINDIR} ${MANDIR} ${MANDIR}/man1 ${MANDIR}/man5
