@@ -24,6 +24,15 @@ config_test:
 
 configure:
 	( cd vim82 ; \
+	ac_cv_header_elf_h=no \
+	vim_cv_getcwd_broken=no \
+	vim_cv_memmove_handles_overlap=yes \
+	vim_cv_stat_ignores_slash=yes \
+	vim_cv_tgetent=zero \
+	vim_cv_terminfo=yes \
+	vim_cv_toupper_broken=no \
+	vim_cv_tty_group=root \
+	vim_cv_tty_mode=0620 \
 	./configure \
 		--prefix=/usr \
 		--with-features=normal \
@@ -36,13 +45,6 @@ configure:
 		--disable-gpm \
 		--disable-acl \
 		--disable-selinux \
-		--without-cxx \
-		--without-cxx-binding \
-		--without-ada \
-		--without-debug \
-		--without-manpages \
-		--without-profile \
-		--without-tests \
 		--host=$(HOST_TARGET) \
 		--build=$(HOST_BUILD) ; \
 	)
