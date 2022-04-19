@@ -11,7 +11,7 @@ download_test:
 	fi )
 
 extract_test:
-	( if [ ! -d $(SRC_NAME) ]; then \
+	( if [ ! -d vim82 ]; then \
 		tar xf $(SRC_NAME).tar.bz2; \
 	fi )
 
@@ -23,7 +23,7 @@ config_test:
 	fi )
 
 configure:
-	( cd $(SRC_NAME) ; \
+	( cd vim82 ; \
 	./configure \
 		--prefix=/usr \
 		--with-features=normal \
