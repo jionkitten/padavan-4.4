@@ -45,6 +45,7 @@ configure:
 		--disable-gpm \
 		--disable-acl \
 		--disable-selinux \
+		--with-tlib=ncurses \
 		--host=$(HOST_TARGET) \
 		--build=$(HOST_BUILD) ; \
 	)
